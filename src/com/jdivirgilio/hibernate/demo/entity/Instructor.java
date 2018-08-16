@@ -120,13 +120,8 @@ public class Instructor {
 
 	@Override
 	public String toString() {
-		String firstPart = "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", instructorDetail=" + instructorDetail + "]";
-		StringBuilder sb = new StringBuilder();
-		for (Course course : courses) {
-			sb.append(course.toString());
-		}
-		return firstPart + sb.toString();
 	}
 
 	// Add convenience methods for bi-directional relationship
